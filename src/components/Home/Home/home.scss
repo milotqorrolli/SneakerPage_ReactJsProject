@@ -1,0 +1,124 @@
+* {
+
+    // @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Noto+Sans+Display:wght@300&family=Roboto:wght@100&display=swap');
+    // font-family: 'Fira Sans', sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.hero-container {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 80px 0;
+
+    padding-top: 160px;
+
+    .hero-wrapper {
+        max-width: 1100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+        .hero1 {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+
+            .p-title {
+                align-self: flex-end;
+                font-size: 20px;
+                padding: 0;
+                margin: 0;
+                color: rgb(40, 199, 148);
+                font-weight: bold;
+                font-style: italic;
+            }
+
+            h2 {
+                margin: 0;
+                margin-top: 5px;
+                padding: 0;
+                font-size: 36px;
+                font-weight: 600;
+                font-style: italic;
+
+                span {
+                    font-size: 48px;
+                    font-weight: 600;
+                    color: orangered;
+                }
+            }
+
+            p {
+                font-size: 12px;
+                color: rgb(218, 216, 216);
+            }
+
+            a {
+                text-decoration: none;
+
+                button {
+                    color: white;
+                    background-color: rgb(40, 199, 148);
+                    border: none;
+                    border-radius: 8px;
+                    padding: 12px 32px;
+                    cursor: pointer;
+                    transition: 0.2s ease-in-out;
+
+                    &:hover {
+                        background-color: rgb(37, 140, 107);
+
+                    }
+                }
+            }
+        }
+
+        .hero2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40%;
+            background-image: url(../../../assets/images/circle.png);
+            background-size: cover;
+            background-position: center;
+
+            img {
+                align-self: center;
+                width: 90%;
+            }
+
+
+        }
+
+        .hero3 {
+            width: 10%;
+            margin-left: auto;
+            display: flex;
+            flex-direction: column;
+
+
+            .img1,
+            .img2,
+            .img3,
+            .img4 {
+                align-self: flex-end;
+                padding: 5px;
+
+
+                img {
+                    background: linear-gradient(to right, #333, transparent);
+                    max-width: 100px;
+                    border-radius: 8px;
+
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,128 @@
+.about-container {
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 80px 0;
+    padding-top: 120px;
+
+    .about-wrapper {
+        max-width: 1100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-transform: uppercase;
+
+
+        .about-wrappers {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .hero1 {
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                text-transform: uppercase;
+
+                .hero1-wrapper {
+                    width: 100%;
+
+                    .p-title {
+                        // align-self: flex-end;
+                        font-size: 20px;
+                        padding: 0;
+                        margin: 0;
+                        color: rgb(40, 199, 148);
+                        font-weight: bold;
+                        font-style: italic;
+                    }
+
+                    h2 {
+                        margin: 0;
+                        margin-top: 5px;
+                        padding: 0;
+                        font-size: 32px;
+                        font-weight: 600;
+                        font-style: italic;
+
+                        span {
+                            font-size: 42px;
+                            font-weight: 600;
+                            color: orangered;
+                        }
+                    }
+
+                    p {
+                        font-size: 12px;
+                        color: rgb(218, 216, 216);
+                    }
+
+                    .about-buttons {
+                        display: flex;
+                        flex-direction: row;
+
+
+
+                        a {
+                            text-decoration: none;
+                            padding: 0 2px;
+
+
+                            button {
+                                color: white;
+                                background-color: rgb(40, 199, 148);
+                                border: none;
+                                border-radius: 8px;
+                                padding: 12px 32px;
+                                cursor: pointer;
+                                font-weight: bold;
+
+                                transition: 0.2s ease-in-out;
+
+                                &:hover {
+                                    background-color: rgb(37, 140, 107);
+
+                                }
+                            }
+
+
+
+                            .second-button {
+                                text-transform: uppercase;
+                                background-color: transparent;
+
+                                &:hover {
+                                    color: rgb(37, 140, 107);
+                                    background-color: transparent;
+
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+
+            .hero2 {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                width: 70%;
+
+
+                img {
+                    width: 70%;
+                    background-image: url(../../../assets/images/circle.png);
+                    background-size: cover;
+                    background-position: center;
+                }
+            }
+        }
+    }
+}

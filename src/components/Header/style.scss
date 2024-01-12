@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 300;
+
+}
+
+.header-container {
+    width: 100%;
+    margin: 0 auto;
+    background-color: black;
+    padding: 0;
+    position: fixed;
+
+
+    .header-wrapper {
+        max-width: 1100px;
+        margin: 0 auto;
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: uppercase;
+
+        h3 {
+            font-size: 24px;
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-weight: 800;
+
+                span {
+                    color: rgb(40, 199, 148);
+                    font-size: 24px;
+                    font-weight: 800;
+                }
+
+              
+
+            }
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+            list-style: none;
+
+            
+
+            li {
+                font-size: 16px;
+
+                a {
+                    text-decoration: none;
+                    margin-left: 20px;
+                    color: white;
+                    transition: 0.2s ease-in-out;
+                    &:hover {
+                        color: rgb(40, 199, 148);
+                    }
+                }
+            }
+
+            @media (max-width: 500px)
+            {
+               display: none;
+               position: fixed;
+            //    background-color: black;
+               height: 100vh;
+               width: 100%;
+               top: 0;
+               left: 0;
+               margin: 0;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+               transition: all .4s ease-in-out;
+               &.mobile-menu {
+                display: flex;
+               }
+               li a {
+                color: white;
+                font-size: 20px;
+                font-weight: bolder;
+                margin-top: 8px;
+                margin-bottom: 8px;
+
+                &:hover {
+                    color: orangered;
+                }
+               }
+            }
+        // li {
+        //     font-size: 19px;
+        //     a {
+        //         text-decoration: none;
+        //         margin-left: 20px;
+        //         color: white;
+        //     }
+        // }
+    
+
+        }
+
+
+    }
+
+    button {
+        background-color: orangered;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+
+        &:hover {
+            background-color: white;
+            color: black;
+        }
+        @media (min-width: 500px) {
+            display: none;
+        }
+    }
+
+
+
+}
+
+
+
+
+  
